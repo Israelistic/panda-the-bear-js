@@ -71,3 +71,49 @@ submitForm.disabled = true;
 
 personalInfo = document.querySelector(".bio-info");
 personalInfo.remove();
+
+
+Part II
+---------
+1) timeTravel  = document.getElementById("time-travel")
+timeTravel.parentNode.remove()
+
+2)
+pikachu = document.getElementById("right-image")
+<div class=​"portfolio-image" id=​"right-image">​…​</div>
+
+​
+pikachuClone = pikachu.cloneNode(true)
+
+container  = document.querySelector(".portfolio-container")
+
+container.insertAdjacentHTML('beforeend', pikachuClone)
+
+
+3)
+(LEFT SPAN)
+a) var leftSpan = document.createElement('span');
+
+b)
+var lastUpdated = document.createTextNode('Page last updated on');
+
+c)
+leftSpan.appendChild(lastUpdated);
+
+d)
+listItem.appendChild(leftSpan);
+
+
+(RIGHT SPAN)
+a)
+var rightSpan = document.createElement('span');
+
+b)
+date = new Date()
+var lastUpdated = document.createTextNode(date);
+
+c)
+listItem.appendChild(rightSpan);
+d)
+leftList = document.querySelector(".bio-info")
+leftList.appendChild(listItem);
