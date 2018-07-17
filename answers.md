@@ -106,14 +106,26 @@ listItem.appendChild(leftSpan);
 
 (RIGHT SPAN)
 a)
+//created a <span> tag.
 var rightSpan = document.createElement('span');
 
 b)
+//took a time stamp of the current date.
 date = new Date()
-var lastUpdated = document.createTextNode(date);
 
 c)
-listItem.appendChild(rightSpan);
+//created a test/string out of date.
+var lastUpdated = document.createTextNode(date);
+
 d)
+// append the text to the end of the span
+ list.
+ rightSpan.appendChild(lastUpdated);
+e)
+// put the span into <li>
+listItem.appendChild(rightSpan);
+
+f)
+//grabbed the list and append 
 leftList = document.querySelector(".bio-info")
 leftList.appendChild(listItem);
